@@ -1,3 +1,11 @@
 language: node_js
 node_js:
 - "8.6.0"
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "06e64bfc-3f76-4759-8817-5d72f54b9e82"
+  app:
+    master: oudot-production
+    develop: oudot-staging
