@@ -8,3 +8,4 @@ deploy:
   app:
     master: oudot-production
     develop: oudot-staging
+  skip_cleanup: true
