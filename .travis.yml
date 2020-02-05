@@ -1,11 +1,10 @@
 language: node_js
 node_js:
-- "8.6.0"
-
+- 8.6.0
 deploy:
   provider: heroku
   api_key:
-    secure: "06e64bfc-3f76-4759-8817-5d72f54b9e82"
+    secure: qKcWwbSvTqzmcemDa78dVu6lY3x8ebBJd+NA61ZVjqcu0bhgr3Mi9L4/n9WaJJafZj7cQ3ZnHoCopsMXG0bN8a/CU0lCOmcgdlMdp66gNV1Dg6cKBqgk6nYE8fIlDVRcKC+h2Hz85T8x4a/Iyo9SQVjtPZN3v0b8by87sfj4SL5zAxMiaFEzGfWamrGs72sbIi621e2ulrWwOSBu9ufQdJL7U8NfjB9hhmt8bzgYKFq+iRKyh+A2d6ygMQvLyjzV4wA76p7OJgPbqjKuRalvUNgvVCRWqlAcOIh4NlpCvejmLs6y2BrxYXH6Sn/oClLjxWxbSNCnSokUgCLzl8XzpJO1v6LN30ehqG10aqKy9PTRuSD+0E6FACmBfMQyBQuN+TfDjOv/asHTLHWqP9JknA6BTnaysRY4o/drSBt423lRKX01HszjkNAEYuYrk+5QH0ORGaqHWkLjjsrj+deBpSsA3FnBNy/VP/ki3IEqGsNnKpKum1JZdj7WYpiE3NEvzyaN9PmMpME1d8mYSgPJ8KlnoWBnmv71RuVuBM6LaeiJF/bLeaVLWxX6OekVNjY/AGQOuJgHX5SGgpTlf+6AvlYbJtaWJ1URY4wJBkJaYby9804dEZ5VunMt5jMpSzrHp46f2D2U0mvwRBYYGxPuPr50YbN4oWQRiReQnuWybJg=
   app:
     master: oudot-production
     develop: oudot-staging
