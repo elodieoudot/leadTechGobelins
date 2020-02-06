@@ -5,3 +5,13 @@
   display: inline-block;
   margin: 0 10px 20px 0;
 }
+
+.panel-heading{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.panel-title{
+  align-self: center;
+}

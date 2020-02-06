@@ -1,9 +1,12 @@
 <hr>
 
 <div class="panel panel-default search-results">
+
   <div class="panel-heading">
     <h3 class="panel-title">Search Results</h3>
+    <a href="/zip?tags=<%= tagsParameter %>" class="btn btn-primary">Zip results</a>
   </div>
+
   <div class="panel-body">
 
     <% if (photos.length) { %>
@@ -24,5 +27,6 @@
     <% } %>
 
   </div>
+  
 
 </div>

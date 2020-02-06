@@ -1,5 +1,7 @@
 const formValidator = require('./form_validator');
 const photoModel = require('./photo_model');
+const {PubSub} = require('@google-cloud/pubsub');
+const {Storage} = require('@google-cloud/storage');
 
 function route(app) {
   app.get('/', (req, res) => {
@@ -37,6 +39,59 @@ function route(app) {
         return res.status(500).send({ error });
       });
   });
+
+  app.get('/zip', async(req, res) => {
+    const tags = req.query.tags;
+  
+    function quickstart(
+      projectId = 'gobelin', // Your Google Cloud Platform project ID
+      topicName = 'elodie', // Name for the new topic to create
+      data = JSON.stringify({tags: tags})
+    ) {
+      // Instantiates a client
+      const pubSubClient = new PubSub({projectId});
+
+      async function publishMessage() {
+            
+        // Publishes the message as a string, e.g. "Hello, world!" or JSON.stringify(someObject)
+        const dataBuffer = Buffer.from(data);
+    
+        const messageId = await pubSubClient.topic(topicName).publish(dataBuffer);
+        console.log(`Message ${messageId} published.`);
+      }
+    
+      publishMessage().catch(console.error);
+      
+    }
+    quickstart();
+
+
+    // const storage = new Storage();
+
+    // const file = await storage
+    // .bucket(profileBucket)
+    // .file('public/users/' + filename);
+    //   const stream = file.createWriteStream({
+    //     metadata: {
+    //       contentType: uploadedFile.mimetype,
+    //       cacheControl: 'private'
+    //     },
+    //     resumable: false
+    //   });
+    // return new Promise ((resolve, reject) => {
+    //   stream.on('error', (err) => {
+    //     reject(err);
+    //   });
+    //   stream.on('finish', () => {
+    //     resolve('Ok');
+    //   });
+    //   stream.end(uploadedFile.buffer);
+    // });
+
+
+
+  });
+
 }
 
 module.exports = route;
