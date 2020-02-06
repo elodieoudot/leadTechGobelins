@@ -48,6 +48,7 @@ function route(app) {
       topicName = 'elodie', // Name for the new topic to create
       data = JSON.stringify({tags: tags})
     ) {
+      console.log(data);
       // Instantiates a client
       const pubSubClient = new PubSub({projectId});
 
@@ -64,30 +65,6 @@ function route(app) {
       
     }
     quickstart();
-
-
-    // const storage = new Storage();
-
-    // const file = await storage
-    // .bucket(profileBucket)
-    // .file('public/users/' + filename);
-    //   const stream = file.createWriteStream({
-    //     metadata: {
-    //       contentType: uploadedFile.mimetype,
-    //       cacheControl: 'private'
-    //     },
-    //     resumable: false
-    //   });
-    // return new Promise ((resolve, reject) => {
-    //   stream.on('error', (err) => {
-    //     reject(err);
-    //   });
-    //   stream.on('finish', () => {
-    //     resolve('Ok');
-    //   });
-    //   stream.end(uploadedFile.buffer);
-    // });
-
 
 
   });
