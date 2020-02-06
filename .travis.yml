@@ -1,18 +1,12 @@
 language: node_js
 node_js:
 - 8.6.0
+
 deploy:
   provider: heroku
   api_key:
-<<<<<<< HEAD
-    secure: qKcWwbSvTqzmcemDa78dVu6lY3x8ebBJd+NA61ZVjqcu0bhgr3Mi9L4/n9WaJJafZj7cQ3ZnHoCopsMXG0bN8a/CU0lCOmcgdlMdp66gNV1Dg6cKBqgk6nYE8fIlDVRcKC+h2Hz85T8x4a/Iyo9SQVjtPZN3v0b8by87sfj4SL5zAxMiaFEzGfWamrGs72sbIi621e2ulrWwOSBu9ufQdJL7U8NfjB9hhmt8bzgYKFq+iRKyh+A2d6ygMQvLyjzV4wA76p7OJgPbqjKuRalvUNgvVCRWqlAcOIh4NlpCvejmLs6y2BrxYXH6Sn/oClLjxWxbSNCnSokUgCLzl8XzpJO1v6LN30ehqG10aqKy9PTRuSD+0E6FACmBfMQyBQuN+TfDjOv/asHTLHWqP9JknA6BTnaysRY4o/drSBt423lRKX01HszjkNAEYuYrk+5QH0ORGaqHWkLjjsrj+deBpSsA3FnBNy/VP/ki3IEqGsNnKpKum1JZdj7WYpiE3NEvzyaN9PmMpME1d8mYSgPJ8KlnoWBnmv71RuVuBM6LaeiJF/bLeaVLWxX6OekVNjY/AGQOuJgHX5SGgpTlf+6AvlYbJtaWJ1URY4wJBkJaYby9804dEZ5VunMt5jMpSzrHp46f2D2U0mvwRBYYGxPuPr50YbN4oWQRiReQnuWybJg=
-  app:
-    master: oudot-production
-    develop: oudot-staging
-=======
     secure: ucfFVzw0ichKXMV0JZbZN8K9gCikvcK/7dmIJcSJt2NRZRmWF7tdnBtwHFpqDbCKFCBetpQWjpFik9shLNaGXXdBqBZA52n83Xw5h9RiwjDgSIOhVU4MhT4phy2H60i+ZkjxZzK/22pmxkgq77u0qO2IrhTh82gGnRwgJ+5b1y6JnZR68w5kld6abYhtcKf/BR9e5EWX7ptPyQJk9yrYnbc+2Mb5L4LLo2xUrVqKTUUq16IR3fkBzdw5aFEggRjs7RJPVhQ6HFT1t4M2zFmhcme2rWB4pFa3dxNJIegCL2azETv+PKmrvA3d+HchBUvRzCzOOLlP4XQqOmXAahzd/HCA1x+SM++4/ArwGlpWOCu9xiOwM0g87caoOS1Ae7/W8hdPw/TuCtjEFnVI+XecBSC/fgUN11qWHut18DDs01JtGmJbA99LvNg5d5NsQ+KqE8cWkUENf6eOVJco8GkcAQsGdO0fKK9ientwtp7PVwtuPZbaAzfKEq6Hov/1KUJyiPaTK82rgW0DI/9TRsRChi76ZA3TW9r4b0UZAfkX8mtgKD4D/0qj+U0PFSoY7FhuOP51NabRPz/PpXGJDPZ4nwTfY03L/lP0OIvZ9L3euXcp25y5/nQ7iFJCgm+vGpgwqYaKFiBIBWtOoWxeR0A17h3Feyh+kESK1Uwv9uVgjiQ=
   app:
     master: oudot-production
     develop: oudot-staging
   skip_cleanup: true
->>>>>>> 8be8623f71b6d4353a80d57866938c4f61d7c706
